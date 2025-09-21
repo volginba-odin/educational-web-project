@@ -1,0 +1,68 @@
+* {padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;}
+
+body {background-color: lightgray;}
+
+.card {
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 300px;
+    overflow: hidden;
+    filter: grayscale(1);
+    transition: 1s;}
+
+.card:hover {filter: none;}
+
+.slogan {
+    background: url(bg.png);
+    background-size: cover;
+    height: 200px;
+    padding: 20px;}
+    
+.slogan p {
+    background-color: yellow;
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;}
+
+.info {padding: 20px;}
+
+.header {font-size: 20px;}
+
+.autor {font-size: 20px;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;}
+
+.user, .rating {font-size: 20px;
+    color: gray;
+    display: inline-block;}
+
+.user {margin-right: 20px;}
+
+.user::before {content: url(user.svg);
+    vertical-align: middle;
+    margin-right: 10px;}
+
+.rating::before {content: url(star.svg);
+    vertical-align: middle;
+    margin-right: 10px;}
+
+.button {margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(58, 0, 128);
+    height: 50px;
+    width: 100%;}
+
+.button::before {content: url(window.svg);
+    vertical-align: middle;
+    margin-right: 10px;}
