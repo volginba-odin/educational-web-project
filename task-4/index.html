@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа № 4. С нуля</title>
+    <link rel="stylesheet" href="styles/main_style.css">
+</head>
+<body>
+    <div class="service_tegs">
+        <h1 class="service_tegs-header">Практическая работа № 4</h1>
+        <a class="servis_tegs-return" href="../index.html">На главную</a>
+    </div>
+
+    <div class="wrapper">
+        
+        <!-- Заголовок: логотип и меню -->
+        <div class="smartfone_subheader">
+            <div class="smartfone_left_block">
+                18:45
+            </div>
+            <div class="smartfone_right_block">
+                <img class="smartfone_icons" src="images/icons/fa_signal.svg" alt="signal">
+                <img class="smartfone_icons" src="images/icons/wifi.svg" alt="wifi">
+                <img class="smartfone_icons" src="images/icons/battery.svg" alt="battery">
+            </div>
+        </div>
+        <header class="header">
+            <button class="header_burger-menu">
+                <img src="images/icons/burger-menu.svg" alt="Burger">
+            </button>
+            <h2 class="header_title"><a href="#">riverside</a></h2>
+            <nav class="header_menu">
+                <a class="header_menu-item" href="#about">About Us</a>
+                <a class="header_menu-item" href="#events">Events</a>
+                <a class="header_menu-item" href="#contact">Contact Us</a>
+                <button class="header_button" type="button">book</button>
+            </nav>
+            <div class="header_language-selection">
+                <img src="images/icons/lang.svg" alt="globe">
+                <p>En</p>
+            </div>
+        </header>
+
+        <!-- Содержание сайта -->
+        <main>
+            <!-- Главное бронирование -->
+            <section class="hero">
+                <div class="hero_booking">
+                    <div class="hero_hotel">
+                        <h4 class="hero_name">Hotel or destination</h4>
+                        <select name="hotel" id="hotel" title="hotel">
+                            <option value="">Select</option>
+                            <option value="valencia">Valencia</option>
+                            <option value="malagia">Malagia</option>
+                            <option value="atocha">Atocha</option>
+                        </select>
+                    </div>
+                    <div class="hero_arrival">
+                        <h4 class="hero_name">Arrival</h4>
+                        <select name="arrival" id="arrival" title="arrival">
+                            <option>25.10.22</option>
+                        </select>
+                    </div>
+                    <div class="hero_departure">
+                        <h4 class="hero_name">Departure</h4>
+                        <select name="departure" id="departure" title="departure">
+                            <option>27.10.22</option>
+                        </select>
+                    </div>
+                    <button class="hero_button" type="button">book</button>
+                </div>
+                <div class="hero_mouse">
+                    <img class="hero_mouse-img" src="images/icons/Scroll down.svg" alt="mouse">
+                </div>
+            </section>
+
+            <!-- О группе отелей -->
+            <section class="about" id="about">
+                <h3 class="about_title">About Us</h3>
+                <div class="about_rectangle"></div>
+                <div class="about_text">
+                    <p class="about_item">The way we travel and move has changed in the last few years. 
+                        We no longer want the typical photo that all our contacts post on Instagram. 
+                        We no longer want to elbow our way through crowded museums. 
+                        We no longer want to view the city through the mobile lens.
+                    </p>
+                    <p class="about_item">It’s not about travelling, it’s about discovering. 
+                        Travellers are the 21st century pilgrims who seek the basic, 
+                        long-lasting and human essence. The city is a canvas of emotions and 
+                        experiences and culture is the invisible architecture that frames it.
+                    </p>
+                    <p class="about_item">Only YOU designs a new way of travelling inspired by the local and human 
+                        connection where each hotel turns into a reflection of its environment. 
+                        Dear travellers: you’ve reached your destination.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Мероприятия -->
+            <section class="events" id="events">
+                <h3 class="events_title">Our Events</h3>
+                <div class="events_list">
+                    <div class="events_item">
+                        <img class="events_image" src="images/cards/card-1.png" alt="photo events">
+                        <div class="events_block-date">
+                            <span class="events_date">24</span>
+                            <span class="events_month">Oct</span>
+                        </div>
+                        <div class="events_name">Coctails & Bites</div>
+                        <div class="events_location">riverside valencia</div>
+                    </div>
+                    <div class="events_item events_closed">
+                        <img class="events_image" src="images/cards/card-2.png" alt="photo events">
+                        <div class="events_block-date">
+                            <span class="events_date">25</span>
+                            <span class="events_month">Oct</span>
+                        </div>
+                        <div class="events_name">Weekend Brunch</div>
+                        <div class="events_location">riverside malagia</div>                    
+                    </div>
+                    <div class="events_item events_closed">
+                        <img class="events_image" src="images/cards/card-3.png" alt="photo events">
+                        <div class="events_block-date">
+                            <span class="events_date">26</span>
+                            <span class="events_month">Oct</span>
+                        </div>
+                        <div class="events_name">Piano Night</div>
+                        <div class="events_location">riverside atocha</div>                    
+                    </div>
+                </div>
+                <button class="events_button" type="button">book</button>
+            </section>
+
+            <!-- Поощрение к знакомству -->
+            <section class="contact" id="contact">
+                <h3 class="contact_title">Contact Us</h3>
+                <div class="contact_field">
+                    <form class="contact_list" action="">
+                            <input class="contact_item" type="text" 
+                                placeholder="name*" required="">
+                            <input class="contact_item" type="text" 
+                                placeholder="surname*" required="">
+                            <input class="contact_item" type="text" 
+                                placeholder="city">
+                            <input class="contact_item" type="text" 
+                                placeholder="country">
+                            <input class="contact_item contact_item-wide" 
+                                type="tel" placeholder="phone">
+                            <input class="contact_item contact_item-wide" 
+                                type="email" placeholder="email*" required="">
+                    </form>
+                    <textarea class="contact_message" name="message" id="message" 
+                        placeholder="message*">message*</textarea>
+                        
+                    <button class="contact_button" type="button">send</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <div class="footer-header">riversaid</div>
+            
+            <div class="footer-menu">
+                <div class="footer-menu-block footer-menu-block-column1">
+                    <div class="footer-menu-block-header">About</div>
+                    <div class="footer-submenu-block">
+                        <a href="#about">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#contact">Contact Us</a>
+                    </div>
+                </div>
+                <div class="footer-menu-block footer-menu-block-column2">
+                    <div class="footer-menu-block-header">Reservations</div>
+                    <div class="footer-submenu-block">
+                        <a href="#">Request an invoice</a>
+                        <a href="#main-block">Find a reservation</a>
+                        <a href="#">Email Preferences</a>
+                    </div>
+                </div>
+                <div class="footer-menu-block footer-menu-block-column3">
+                    <div class="footer-menu-block-header">News</div>
+                    <div class="footer-submenu-block">
+                        <a href="#">Press Room</a>
+                        <a href="#">New Openings</a>
+                        <a href="#">Magazine</a>
+                        <a href="#">Newsletter</a>
+                    </div>   
+                </div>
+            </div>
+            
+            <div class="footer-social-list">
+                <a href="#"><img src="images/icons/twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="images/icons/instagram.svg" alt="instagram"></a>
+                <a href="#"><img src="images/icons/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="images/icons/youtube.svg" alt="youtube"></a>
+            </div>
+
+            <div class="footer-line"></div>
+
+            <div class="footer-notice">
+                <div class="footer-notice-item">
+                    <a href="#">Legal Notice</a>
+                    <img src="images/icons/Ellipse 3.svg" alt="elipse">
+                </div>
+                <div class="footer-notice-item">
+                    <a href="#">Privacy Policy</a>
+                    <img src="images/icons/Ellipse 3.svg" alt="elipse">
+                </div>
+                <div class="footer-notice-item">
+                    <a href="#">Cookie Preferences</a>
+                    <img src="images/icons/Ellipse 3.svg" alt="elipse">
+                </div>
+                <div class="footer-notice-item">
+                    <a href="#">Cookie Accessability Policy</a>
+                    <img src="images/icons/Ellipse 3.svg" alt="elipse">
+                </div>
+            </div>
+
+            <div class="footer-rights">Riverside Hotel 1997 -2002. All Rights Reserved.</div>
+        
+        </footer>
+    </div>
+
+</body>
+</html>

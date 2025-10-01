@@ -1,0 +1,29 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*Common rules*/
+:root {
+    --blue_color: #076bb2;
+    --alternative_color: white;
+    --primary_font: 'Inter', sans-serif;
+}
+
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body {background-color: lightgray;}
+
+.service_tegs {display: none;}
+
+.wrapper {max-width: 1512px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
